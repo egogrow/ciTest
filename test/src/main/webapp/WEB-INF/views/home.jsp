@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>
-	Hello world! - build 자동화 테스트 다시!
+	Hello world! - build 자동화 테스트 다시! 재수행
 </h1>
 
 <P>  The time on the server is ${serverTime}. </P>
