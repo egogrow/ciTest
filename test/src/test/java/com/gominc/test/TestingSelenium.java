@@ -4,6 +4,7 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class TestingSelenium {
 
@@ -12,10 +13,14 @@ public class TestingSelenium {
 	private final static String BASE_URL = "http://naver.com";
 	
 	@BeforeClass 
-	public static void openBrowser() { 
-	System.setProperty("webdriver.chrome.driver", "src/test/driver/chromedriver");
-	ChromeDriver = new ChromeDriver();	
-	} 
+	public static void openBrowser() {		
+//		System.setProperty("webdriver.chrome.driver", "src/test/driver/chromedriver");
+//		ChromeDriver = new ChromeDriver();	
+		ChromeOptions chromeOptions= new ChromeOptions();
+		chromeOptions.setBinary("/usr/bin/google-chrome");
+		System.setProperty("webdriver.chrome.driver","src/test/driver/chromedriver");
+		ChromeDriver = new ChromeDriver(chromeOptions);		
+	}
 
 	@Test 
 	public void test() { 
