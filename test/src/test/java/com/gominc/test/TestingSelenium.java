@@ -20,8 +20,8 @@ public class TestingSelenium {
 		System.setProperty("webdriver.chrome.driver","src/test/driver/chromedriver");
 		ChromeOptions chromeOptions= new ChromeOptions();
 		chromeOptions.setBinary("/usr/bin/google-chrome-stable");
-		chromeOptions.addArguments("--headless");
-//		chromeOptions.addArguments("--no-sandbox");
+		chromeOptions.addArguments("--no-sandbox");
+		chromeOptions.addArguments("--headless");		
 //		chromeOptions.addArguments("--headless");
 		ChromeDriver = new ChromeDriver(chromeOptions);				
 	}
