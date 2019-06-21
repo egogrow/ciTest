@@ -21,7 +21,7 @@ public class TestingSelenium {
 		ChromeOptions chromeOptions= new ChromeOptions();
 //		chromeOptions.setBinary("/usr/bin/google-chrome-stable");
 		chromeOptions.addArguments("headless");
-		chromeOptions.addArguments("--no-sandbox");
+//		chromeOptions.addArguments("--no-sandbox");
 //		chromeOptions.addArguments("--headless");
 		ChromeDriver = new ChromeDriver(chromeOptions);				
 	}
