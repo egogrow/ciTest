@@ -10,7 +10,7 @@ public class TestingSelenium {
 
 	private static ChromeDriver ChromeDriver; 
 //	private final static String BASE_URL = "http://dpgs.gompay.net:8080/test";
-	private final static String BASE_URL = "http://naver.com";
+	private final static String BASE_URL = "";
 	
 	@BeforeClass 
 	public static void openBrowser() {		
@@ -23,7 +23,7 @@ public class TestingSelenium {
 		chromeOptions.addArguments("--no-sandbox");
 		chromeOptions.addArguments("--headless");		
 //		chromeOptions.addArguments("--headless");
-		ChromeDriver = new ChromeDriver(chromeOptions);				
+		ChromeDriver = new ChromeDriver(chromeOptions);
 	}
 
 	@Test 
