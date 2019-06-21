@@ -13,7 +13,7 @@ public class TestingSelenium {
 	
 	@BeforeClass 
 	public static void openBrowser() { 
-	System.setProperty("webdriver.chrome.driver", "src/test/driver/chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver", "src/test/driver/chromedriver");
 	ChromeDriver = new ChromeDriver();	
 	} 
 
