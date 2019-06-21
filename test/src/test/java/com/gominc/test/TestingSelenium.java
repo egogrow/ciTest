@@ -17,9 +17,9 @@ public class TestingSelenium {
 //		System.setProperty("webdriver.chrome.driver", "src/test/driver/chromedriver");
 //		ChromeDriver = new ChromeDriver();	
 		ChromeOptions chromeOptions= new ChromeOptions();
-		chromeOptions.setBinary("/usr/bin/google-chrome");
+		chromeOptions.setBinary("/usr/bin/google-chrome-stable");
 		System.setProperty("webdriver.chrome.driver","src/test/driver/chromedriver");
-		ChromeDriver = new ChromeDriver(chromeOptions);		
+		ChromeDriver = new ChromeDriver(chromeOptions);				
 	}
 
 	@Test 
